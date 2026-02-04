@@ -19,7 +19,7 @@ import Skeleton from "@/src/components/ui/Skeleton";
  * - true  → use sample data (UI testing / demos / client preview)
  * - false → use real backend data
  */
-const USE_SAMPLE_DATA = false;
+const USE_SAMPLE_DATA = true;
 
 export default function HomePage() {
   const [blogs, setBlogs] = useState<Blog[]>([]);
