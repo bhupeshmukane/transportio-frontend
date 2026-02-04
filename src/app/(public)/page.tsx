@@ -18,7 +18,7 @@ import { SAMPLE_BLOGS } from "@/src/data/sampleBlogs";
  * - true  → use sample data (UI testing / demos / client preview)
  * - false → use real backend data
  */
-const USE_SAMPLE_DATA = true;
+const USE_SAMPLE_DATA = false;
 
 export default function HomePage() {
   const [blogs, setBlogs] = useState<Blog[]>([]);
