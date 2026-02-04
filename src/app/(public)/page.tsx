@@ -12,6 +12,7 @@ import EnterpriseNewsletter from "@/src/components/public/home/EnterpriseNewslet
 
 import { Blog } from "@/src/types/blog";
 import { SAMPLE_BLOGS } from "@/src/data/sampleBlogs";
+import Skeleton from "@/src/components/ui/Skeleton";
 
 /**
  * 🔴 IMPORTANT
@@ -71,6 +72,8 @@ export default function HomePage() {
       {/* HERO */}
       <HeroEditorial blogs={blogs} />
 
+      {loading && <Skeleton />}
+ 
       {/* BREAKING STRIP */}
       <BreakingStrip blogs={blogs} />
 

@@ -9,7 +9,7 @@ import BlogCardSkeleton from "@/src/components/ui/skeletons/BlogCardSkeleton";
 import Breadcrumb from "@/src/components/ui/Breadcrumb";
 import { SAMPLE_BLOGS } from "@/src/data/sampleBlogs";
 
-const USE_SAMPLE_DATA = true; // 🔴 set false in production
+const USE_SAMPLE_DATA = false; // 🔴 set false in production
 
 export default function BlogListingPage() {
   const [blogs, setBlogs] = useState<any[]>([]);
